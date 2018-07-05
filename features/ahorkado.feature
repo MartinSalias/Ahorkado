@@ -17,4 +17,8 @@ Given Pagina principal
 When Letra "A"
 Then Muestra Leyenda "OK"
 
+Scenario: Mostrar contador de vidas
+Given Pagina principal
+Then Muestra contador de vidas "vidas:"
+
 

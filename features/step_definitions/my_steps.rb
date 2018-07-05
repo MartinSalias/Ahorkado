@@ -1,7 +1,5 @@
 Given(/^Pagina principal$/) do
   visit '/'
-l=Ahorkado.new
-	@@palabra_oculta=l.dibujar_espacios	
 end
 
 
@@ -11,9 +9,6 @@ Then(/^Muestra el nombre del juego "(.*?)"$/) do |nombre|
 end
 
 Then(/^muestra guiones de la palabra "(.*?)"$/) do |guion|
-l=Ahorkado.new
-	@@palabra_oculta=l.dibujar_espacios	
-  	
 last_response.body.should =~ /#{guion}/m
 end
 
@@ -27,5 +22,9 @@ end
 
 Then(/^Muestra Leyenda "(.*?)"$/) do |leyenda|
  last_response.body.should =~ /#{leyenda}/m
+end
+
+Then(/^Muestra contador de vidas "(.*?)"$/) do |vidas|
+ last_response.body.should =~ /#{vidas}/m
 end
 
