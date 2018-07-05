@@ -20,6 +20,10 @@ it "letraEnPalabraOk" do
 	ahorkado.verificar_letra_palabra("e").should == "OK"
 end
 
+it "dibujarespacios" do
+	ahorkado = Ahorkado.new
+	ahorkado.dibujar_espacios.should == "_ _ _ _ _ _ "
+end
 
 
 end
