@@ -8,7 +8,7 @@ Then Muestra el nombre del juego "Ahorkado"
 Scenario: Mostrar leyenda si no acerto
 Given Pagina principal
 When Letra "Z"
-Then Muestra Leyenda "Fail"
+Then Muestra Leyenda "ERROR"
 
 
 Scenario: Mostrar leyenda si acerto

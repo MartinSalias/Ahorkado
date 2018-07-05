@@ -1,4 +1,5 @@
 require 'sinatra'
+require './lib/ahorkado.rb'
 
 get '/' do
 	 erb :mainpage
@@ -7,11 +8,9 @@ end
 post '/ingresarLetra' do
   letra=params[:proxima_letra]
 
-		if letra == "Z"
-			@resultado = "Fail"
-		elsif letra=="A"
-		  @resultado="OK"
-	  end									
+	l=Ahorkado.new
+	@resultado =l.verificar_letra_palabra letra 
+								
 	erb :mainpage
 end
 
