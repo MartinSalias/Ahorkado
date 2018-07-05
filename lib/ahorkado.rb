@@ -2,6 +2,7 @@ class Ahorkado
 	def initialize
 	@palabra = "Prueba"
 	@letra = "P"
+    
 	end
 
 	def obtener_palabra
@@ -13,11 +14,11 @@ class Ahorkado
 	end
 
 	def verificar_letra_palabra letra
-	if @palabra.include? letra
-		return "OK"
-	else
-		return "ERROR"
-	end
+		if @palabra.upcase.include? (letra.upcase)
+			return "OK"
+		else
+			return "ERROR"
+		end
 	
 	end
 
