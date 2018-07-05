@@ -1,6 +1,6 @@
 class Ahorkado
 	def initialize
-	@palabra = "Prueba"
+	@palabra = "PRUEBA"
 	@letra = "P"
     
 	end
