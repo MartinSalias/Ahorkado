@@ -22,4 +22,12 @@ class Ahorkado
 	
 	end
 
+   def obtener_longitud
+   	 return @palabra.length
+   end
+
+   def dibujar_espacios
+   	return ("_ " * obtener_longitud) 
+   end
+
 end
