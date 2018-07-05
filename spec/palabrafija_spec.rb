@@ -4,12 +4,9 @@ describe "Juego de Ahorkado" do
 
 it "palabrafija" do
 	ahorkado = Ahorkado.new
-	ahorkado.obtener_palabra.should == "Prueba"
+	ahorkado.obtener_palabra.should == "PRUEBA"
 end
-it "letrafija" do
-	ahorkado = Ahorkado.new
-	ahorkado.obtener_letra.should == "P"
-end
+
 
 it "letraEnPalabraError" do
 	ahorkado = Ahorkado.new
