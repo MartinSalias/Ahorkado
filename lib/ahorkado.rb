@@ -12,4 +12,13 @@ class Ahorkado
 	return @letra
 	end
 
+	def verificar_letra_palabra letra
+	if @palabra.include? letra
+		return "OK"
+	else
+		return "ERROR"
+	end
+	
+	end
+
 end
