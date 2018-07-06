@@ -23,12 +23,9 @@ Then Muestra contador de vidas "vidas:"
 
 Scenario: Mostrar resultado ganador
 Given Pagina principal
-When Letra "p"
-When Letra "r"
-When Letra "u"
-When Letra "e"
-When Letra "b"
-When Letra "a"
+And palabra secreta es "telefono"
+And avance es "elefono"
+When Letra "t"
 Then Muestra "GANO"
 
 Scenario: Mostrar resultado perdedor
