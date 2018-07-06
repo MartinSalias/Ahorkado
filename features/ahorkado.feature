@@ -4,7 +4,7 @@ Scenario:  Ingreso al juego
 Given Pagina principal
 Then Muestra el nombre del juego "Ahorkado"
 And muestra guiones de la palabra "_"
-
+And muestra boton "Nuevo Juego"
 
 Scenario: Mostrar leyenda si no acerto
 Given Pagina principal
@@ -46,4 +46,6 @@ When Letra "u"
 When Letra "e"
 When Letra "b"
 Then Muestra "CONTINUAR"
+
+
 

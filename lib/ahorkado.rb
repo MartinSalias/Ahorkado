@@ -39,7 +39,7 @@ class Ahorkado
 		elsif @mascara == @palabra
    	  return "GANO" 
     else
-			return "CONTINUAR"     
+			return "CONTINUAR" 
   end
 	end
 
