@@ -9,12 +9,14 @@ And muestra imagen "6.png"
 
 Scenario: Mostrar leyenda si no acerto
 Given Pagina principal
+And palabra secreta es "prueba"
 When Letra "Z"
 Then Muestra Leyenda "ERROR"
 
 
 Scenario: Mostrar leyenda si acerto
 Given Pagina principal
+And palabra secreta es "prueba"
 When Letra "A"
 Then Muestra Leyenda "OK"
 
@@ -31,7 +33,7 @@ Then Muestra "GANO"
 
 Scenario: Mostrar resultado perdedor
 Given Pagina principal
-And palabra secreta es "telefono"
+And palabra secreta es "prueba"
 When Letra "q"
 When Letra "q"
 When Letra "q"
