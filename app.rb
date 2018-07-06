@@ -2,7 +2,7 @@ require 'sinatra'
 require './lib/ahorkado.rb'
 
 get '/' do
-	@@l=Ahorkado.new "prueba"
+	@@l=Ahorkado.new 
 	@palabra_oculta=@@l.dibujar_espacios
 	@vidas = @@l.obtener_vidas
 	 erb :mainpage
