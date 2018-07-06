@@ -31,6 +31,7 @@ Then Muestra "GANO"
 
 Scenario: Mostrar resultado perdedor
 Given Pagina principal
+And palabra secreta es "telefono"
 When Letra "q"
 When Letra "q"
 When Letra "q"
@@ -41,6 +42,7 @@ Then Muestra "PERDIO"
 
 Scenario: Mostrar resultado continuar
 Given Pagina principal
+And palabra secreta es "prueba"
 When Letra "p"
 When Letra "r"
 When Letra "u"
@@ -50,17 +52,20 @@ Then Muestra "CONTINUAR"
 
 Scenario: Mostrar cabeza
 Given Pagina principal
+And palabra secreta es "prueba"
 When  Letra "q"
 Then muestra imagen "5.png"
 
 Scenario: Mostrar tronco
 Given Pagina principal
+And palabra secreta es "prueba"
 When  Letra "q"
 When  Letra "q"
 Then muestra imagen "4.png"
 
 Scenario: Mostrar un brazo
 Given Pagina principal
+And palabra secreta es "prueba"
 When  Letra "q"
 When  Letra "q"
 When  Letra "q"
@@ -68,6 +73,7 @@ Then muestra imagen "3.png"
 
 Scenario: Mostrar otro brazo
 Given Pagina principal
+And palabra secreta es "prueba"
 When  Letra "q"
 When  Letra "q"
 When  Letra "q"
@@ -76,6 +82,7 @@ Then muestra imagen "2.png"
 
 Scenario: Mostrar una pierna
 Given Pagina principal
+And palabra secreta es "prueba"
 When  Letra "q"
 When  Letra "q"
 When  Letra "q"
@@ -85,6 +92,7 @@ Then muestra imagen "1.png"
 
 Scenario: Mostrar otra pierna
 Given Pagina principal
+And palabra secreta es "prueba"
 When  Letra "q"
 When  Letra "q"
 When  Letra "q"
