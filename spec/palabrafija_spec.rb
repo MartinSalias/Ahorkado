@@ -1,4 +1,5 @@
 require "./lib/ahorkado.rb"
+require "./lib/lista_palabras.rb"
 
 describe "Juego de Ahorkado" do
 
@@ -83,5 +84,11 @@ describe "Juego de Ahorkado" do
     ahorkado.resultado.should=="CONTINUAR"	
 	end
 
+	
+	it "si no le paso ninguna palabra, elige una al azar" do
+	
+		ahorkado = Ahorkado.new
+		ahorkado.obtener_palabra.length.should > 0
+	end
 end
 

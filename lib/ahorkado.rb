@@ -1,7 +1,15 @@
+require "./lib/lista_palabras.rb"
+
 class Ahorkado
 
-	def initialize palabra
-		@palabra = palabra.upcase
+	def initialize palabra=""
+		
+		if palabra.empty?
+			generador = Lista_palabras.new
+			@palabra = generador.devolver_palabra
+		else
+			@palabra = palabra.upcase
+		end
 		@mascara = "_" * @palabra.length
 		@@vidas = 6
 	end
