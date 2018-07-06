@@ -35,4 +35,10 @@ Given(/^avance es "(.*?)"$/) do |letras|
 	letras.each_char {|letra| @@l.verificar_letra_palabra letra }
 end
 
+Then(/^muestra boton "(.*?)"$/) do |nombre|
+  last_response.body.should =~ /#{nombre}/m
+end
 
+Then(/^muestra imagen "(.*?)"$/) do |imagen|
+  last_response.body.should =~ /#{imagen}/m
+end
