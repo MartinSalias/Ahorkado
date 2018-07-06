@@ -29,5 +29,9 @@ class Ahorkado
    def dibujar_espacios
    	return ("_ " * obtener_longitud) 
    end
+   
+   def buscar_enpalabra
+   	
+   end
 
 end
