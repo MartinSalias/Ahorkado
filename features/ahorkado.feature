@@ -21,4 +21,32 @@ Scenario: Mostrar contador de vidas
 Given Pagina principal
 Then Muestra contador de vidas "vidas:"
 
+Scenario: Mostrar resultado ganador
+Given Pagina principal
+When Letra "p"
+When Letra "r"
+When Letra "u"
+When Letra "e"
+When Letra "b"
+When Letra "a"
+Then Muestra "GANO"
+
+Scenario: Mostrar resultado perdedor
+Given Pagina principal
+When Letra "q"
+When Letra "q"
+When Letra "q"
+When Letra "q"
+When Letra "q"
+When Letra "q"
+Then Muestra "PERDIO"
+
+Scenario: Mostrar resultado continuar
+Given Pagina principal
+When Letra "p"
+When Letra "r"
+When Letra "u"
+When Letra "e"
+When Letra "b"
+Then Muestra "CONTINUAR"
 

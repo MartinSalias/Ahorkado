@@ -28,3 +28,7 @@ Then(/^Muestra contador de vidas "(.*?)"$/) do |vidas|
  last_response.body.should =~ /#{vidas}/m
 end
 
+Then(/^Muestra "(.*?)"$/) do |resultado|
+  last_response.body.should =~ /#{resultado}/m
+end
+

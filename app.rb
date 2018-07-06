@@ -13,6 +13,7 @@ post '/ingresarLetra' do
 	@resultado =@@l.verificar_letra_palabra @@letra
 	@palabra_oculta=@@l.dibujar_espacios									
 	@@vidas = @@l.obtener_vidas
+	@mensaje = @@l.resultado
 	erb :mainpage
 end
 
