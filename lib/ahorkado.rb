@@ -36,7 +36,13 @@ class Ahorkado
 	def resultado
 		if @@vidas==0
 			return "PERDIO"
-		end
+		elsif @mascara == @palabra
+   	  return "GANO" 
+    else
+			return "CONTINUAR"     
+  end
 	end
+
+
    
 end

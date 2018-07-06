@@ -66,6 +66,22 @@ describe "Juego de Ahorkado" do
 		ahorkado.resultado.should=="PERDIO"	
 	end
 
+	it "finalizo ganando" do
+		ahorkado = Ahorkado.new "prueba"
+		ahorkado.verificar_letra_palabra("p")
+    ahorkado.verificar_letra_palabra("r")
+    ahorkado.verificar_letra_palabra("u")
+    ahorkado.verificar_letra_palabra("e")
+    ahorkado.verificar_letra_palabra("b")
+    ahorkado.verificar_letra_palabra("a")
+    ahorkado.resultado.should=="GANO"	
+	end
+
+	it "continua jugando" do
+		ahorkado = Ahorkado.new "prueba"
+		ahorkado.verificar_letra_palabra("p")
+    ahorkado.resultado.should=="CONTINUAR"	
+	end
 
 end
 
