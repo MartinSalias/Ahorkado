@@ -32,5 +32,11 @@ class Ahorkado
 	def obtener_vidas
 		return @@vidas
 	end
+
+	def resultado
+		if @@vidas==0
+			return "PERDIO"
+		end
+	end
    
 end
