@@ -5,6 +5,7 @@ Given Pagina principal
 Then Muestra el nombre del juego "Ahorkado"
 And muestra guiones de la palabra "_"
 And muestra boton "Nuevo Juego"
+And muestra imagen "6.png"
 
 Scenario: Mostrar leyenda si no acerto
 Given Pagina principal

@@ -39,3 +39,6 @@ Then(/^muestra boton "(.*?)"$/) do |nombre|
   last_response.body.should =~ /#{nombre}/m
 end
 
+Then(/^muestra imagen "(.*?)"$/) do |imagen|
+  last_response.body.should =~ /#{imagen}/m
+end
