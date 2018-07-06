@@ -37,5 +37,23 @@ describe "Juego de Ahorkado" do
 		ahorkado.dibujar_espacios.should == "_ A _ _ A _ _ _ _ _"
 	end
 
+	it "vidas" do
+		ahorkado = Ahorkado.new "marcadores"
+		ahorkado.verificar_letra_palabra("a")
+		ahorkado.obtener_vidas == 6
+	end
+
+	it "quitarvidas" do
+		ahorkado = Ahorkado.new "prueba"
+		letra = "h"
+		ahorkado.verificar_letra_palabra(letra).should == "ERROR"
+		ahorkado.obtener_vidas == 5
+	end
+
+	it "obtenervidas" do
+		ahorkado = Ahorkado.new "prueba"
+		ahorkado.obtener_vidas == 6
+	end
+
 end
 

@@ -3,15 +3,14 @@ class Ahorkado
 	def initialize palabra
 		@palabra = palabra.upcase
 		@mascara = "_" * @palabra.length
+		@@vidas = 6
 	end
-
 	def obtener_palabra
 		return @palabra
 	end
 
 	def verificar_letra_palabra letra
 		if @palabra.upcase.include? (letra.upcase)
-			
 			pos = 0
 			@palabra.upcase.each_char do |char|
 				if char == letra.upcase
@@ -19,16 +18,19 @@ class Ahorkado
 				end
 				pos += 1
 			end
-
-			return "OK"
+		return "OK"
 		else
+			@@vidas -=1
 			return "ERROR"
 		end
-	
 	end
-
+	
    def dibujar_espacios
 		return @mascara.split("").join " "
    end
+
+	def obtener_vidas
+		return @@vidas
+	end
    
 end

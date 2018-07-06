@@ -4,15 +4,15 @@ require './lib/ahorkado.rb'
 get '/' do
 	@@l=Ahorkado.new "prueba"
 	@palabra_oculta=@@l.dibujar_espacios
-	@@vidas =6
+	@@vidas = @@l.obtener_vidas
 	 erb :mainpage
 end
 
 post '/ingresarLetra' do
-  letra=params[:proxima_letra]
-	@@vidas-=1
+  @@letra=params[:proxima_letra]
+	@resultado =@@l.verificar_letra_palabra @@letra
 	@palabra_oculta=@@l.dibujar_espacios									
-	@resultado =@@l.verificar_letra_palabra letra 
+	@@vidas = @@l.obtener_vidas
 	erb :mainpage
 end
 
